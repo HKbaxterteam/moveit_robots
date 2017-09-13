@@ -22,10 +22,12 @@
          </group>
      </group>
      <arg name="kinect2" default="false"/>
+     <arg name="depth_device" default="-1" />
      <group if="$(arg kinect2)" >
          <!-- launch kinect2bridge to talk to kinect2 -->
              <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
                  <param name="publish_tf" value="true"/>
+                 <arg name="depth_device" value="$(arg depth_device)" />
              </include>
          
          <!-- Users update this to set transform between camera and robot -->

@@ -7,14 +7,9 @@ Panels:
         - /Status1
         - /Grid1
         - /MotionPlanning1
-        - /MotionPlanning1/Scene Geometry1
         - /MotionPlanning1/Scene Robot1
-        - /MotionPlanning1/Planning Request1
-        - /MotionPlanning1/Planning Metrics1
-        - /MotionPlanning1/Planned Path1
-        - /RobotModel1
-      Splitter Ratio: 0.742560029
-    Tree Height: 360
+      Splitter Ratio: 0.74256
+    Tree Height: 254
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -31,7 +26,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.0299999993
+        Line Width: 0.03
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -218,26 +213,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          r_gripper_l_finger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_gripper_l_finger_tip:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_gripper_r_finger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_gripper_r_finger_tip:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           right_arm_itb:
             Alpha: 1
             Show Axes: false
@@ -350,6 +325,7 @@ Visualization Manager:
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
+        Trail Step Size: 1
         Trajectory Topic: /move_group/display_planned_path
       Planning Metrics:
         Payload: 1
@@ -357,12 +333,12 @@ Visualization Manager:
         Show Manipulability: false
         Show Manipulability Index: false
         Show Weight Limit: false
-        TextHeight: 0.0799999982
+        TextHeight: 0.08
       Planning Request:
         Colliding Link Color: 255; 0; 0
-        Goal State Alpha: 0.25
+        Goal State Alpha: 1
         Goal State Color: 250; 128; 0
-        Interactive Marker Size: 0.300000012
+        Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
         Planning Group: both_arms
         Query Goal State: true
@@ -370,12 +346,12 @@ Visualization Manager:
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
-      Planning Scene Topic: /move_group/monitored_planning_scene
+      Planning Scene Topic: move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
-        Scene Alpha: 0.899999976
+        Scene Alpha: 0.9
         Scene Color: 50; 230; 50
-        Scene Display Time: 0.200000003
+        Scene Display Time: 0.2
         Show Scene Geometry: true
         Voxel Coloring: Z-Axis
         Voxel Rendering: Occupied Voxels
@@ -534,26 +510,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          r_gripper_l_finger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_gripper_l_finger_tip:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_gripper_r_finger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_gripper_r_finger_tip:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           right_arm_itb:
             Alpha: 1
             Show Axes: false
@@ -659,26 +615,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Robot Alpha: 0.5
+        Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
-    - Alpha: 1
-      Class: rviz/RobotModel
-      Collision Enabled: true
-      Enabled: false
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-      Name: RobotModel
-      Robot Description: robot_description
-      TF Prefix: ""
-      Update Interval: 0
-      Value: false
-      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -694,24 +634,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.58451653
+      Distance: 6.77787
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.0599999987
+        Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.31900406
-        Y: -0.104289576
-        Z: 2.87737003e-05
-      Focal Shape Fixed Size: true
-      Focal Shape Size: 0.0500000007
+        X: -0.621118
+        Y: 0.477484
+        Z: 2.87737e-05
       Name: Current View
-      Near Clip Distance: 0.00999999978
-      Pitch: 0.140202954
+      Near Clip Distance: 0.01
+      Pitch: -0.1448
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 5.99494314
+      Yaw: 6.02994
     Saved: ~
 Window Geometry:
   Displays:
@@ -721,11 +659,13 @@ Window Geometry:
     collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
-  Motion Planning:
+  MotionPlanning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b8000003dafc0200000005fb000000100044006900730070006c0061007900730100000028000001fd000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000022b000001d7000001cc00ffffff000004c2000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  MotionPlanning - Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003dafc020000000bfb000000100044006900730070006c006100790073010000002800000193000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000022b000001d70000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001c100000241000001cc00fffffffb0000000a0049006d00610067006502000001c30000007d0000045400000294fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000022b000001d70000000000000000fb000000120020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000022b000001d7000000000000000000000497000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1920
-  X: 0
-  Y: 516
+  Width: 1855
+  X: 65
+  Y: 24
